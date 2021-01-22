@@ -9,7 +9,7 @@ body {
   font-size: 20px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3/1fr);
   grid-template-rows: 50px 1fr 1fr 100px;
   gap: 10px;
   padding: 10px;
@@ -36,6 +36,11 @@ body {
   text-align: center;
   font-weight: bold;
 }
+
+.title{
+  position:relative;
+  top:25%;
+}
 .dev-diary {
   grid-row-start: 2;
   grid-row-end: span 2;
@@ -43,21 +48,43 @@ body {
   grid-column-end: 3;
 }
 
-.monke-face {
-  position: absolute;
-  left: 73%;
-  top: 72px;
+h5{
+  position:relative;
+  left:50%;
+} 
+.basic-app1{
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  grid-column-start: 3;
+  grid-column-end: 3;
 }
-.monke-butt {
-  position: absolute;
-  left: 73%;
-  top: 72px;
+
+img{
+  height: 80%; 
+  width: 80%; 
+  object-fit: contain;
 }
+
+.monke-face{
+  position:relative;
+  top: 0px;
+  left: 35px;
+}
+
+.monke-butt{
+  position:relative;
+  top: 0px;
+  left: 35px;
+}
+
 .button {
-  position: relative;
-  top: 186px;
-  left: 170px;
+  position:relative;
+  left: 38%;
+
+  object-fit: contain;
+
   font-weight: bold;
+
   background-image: url("https://media.istockphoto.com/vectors/banana-pattern-vector-id914067456?k=6&m=914067456&s=612x612&w=0&h=XC6uqtldkDaRIa8CPDPY12_D-eIIXMeI-3Hiqlo5N7c=");
 }
 .footer {
@@ -65,9 +92,9 @@ body {
 }
 
 .counter {
-  position: fixed;
-  right: 30px;
-  bottom: 10px;
+  position: relative;
+  top: 20%;
+  left: 40%;
 
   color: blanchedalmond;
   background-image: linear-gradient(to left, blue, black);
